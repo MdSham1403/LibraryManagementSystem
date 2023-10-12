@@ -1,41 +1,40 @@
 # LibraryManagementSystem
 
-Project Title: Library Management System
+Project Title: Simple Library Management System in Python
 
 Description:
-The Library Management System is a Python-based web application that provides an efficient and user-friendly solution for managing a library's resources and services. This project combines Python, SQL, and web development to create a comprehensive library management system with features for both librarians and library patrons.
+This Python script demonstrates a simple Library Management System, which allows users to perform essential operations related to managing library books. The script uses a dictionary to store book information and provides a command-line interface for users to interact with the library.
 
-Key Features:
+Code Description:
 
-User Registration and Authentication: Allows librarians to create and manage user accounts, while patrons can log in and access their accounts.
+1.Initialization: The code starts with the initialization of an empty dictionary named library, which is used to store book records.
 
-Book Management: Provides librarians with tools to add, update, and delete books, including information like title, author, ISBN, and available copies.
+2.Add a Book:
 
-Borrowing and Returning: Patrons can borrow books and return them, with the system keeping track of due dates and late fees.
+The add_book function prompts the user to input details of a new book, including the title, author, and the number of copies.
+If the book already exists in the library, the code increments the number of copies. If not, a new entry is added to the library.
+3.Display Available Books:
 
-Search and Filtering: Users can search for books using various criteria, such as title, author, or category, and see the availability of each book.
+The display_books function lists all the available books in the library, including their titles, authors, and the number of copies.
+4.Borrow a Book:
 
-User Privileges: Differentiates between librarian and patron accounts, granting librarians administrative rights for book management.
+The borrow_book function allows users to borrow a book by entering the book's title.
+It checks if the book is available and reduces the number of copies if it is. If the book is out of stock or not in the library, appropriate messages are displayed.
+5.Return a Book:
 
-Database Storage: Utilizes a SQL database to store book and user information securely.
+The return_book function enables users to return a borrowed book by entering the book's title.
+It increments the number of copies if the book exists in the library; otherwise, it informs the user that the book is not found.
+6.Main Menu:
 
-Technologies Used:
+The script displays a main menu that provides options for various actions, including adding, displaying, borrowing, and returning books. Users can also choose to quit the system.
+7.User Interaction:
 
-Python: The primary programming language for the backend logic and routing.
-Flask: A web framework used to create the web application.
-SQLAlchemy: For interfacing with the SQLite database.
-HTML, CSS, JavaScript: Front-end technologies for the user interface.
-Plotly: For generating interactive expense reports in the Expense Tracker.
-Getting Started:
+The code uses input to gather user input and responds accordingly based on the selected menu option.
+Usage:
 
-Clone the project repository.
-Set up a virtual environment for Python.
-Install the required dependencies (Flask, SQLAlchemy, etc.).
-Run the app.py script to start the web application.
-Access the web interface in your browser and start managing your library.
-Contributing:
-Contributions are welcome! Feel free to fork the project, create new features, or fix issues. Submit pull requests to collaborate with other developers.
+Users run the script, and it presents them with a menu to perform library management tasks.
+Users can add books, view available books, borrow books, return books, or exit the system.
+Enhancements:
 
-Demo:
-For a live demo of the project, visit Demo Library Management System.
-
+This code serves as a basic demonstration of a library management system. To make it more practical, you can consider implementing features like a persistent database, user authentication, and more complex user interactions.
+You may also want to add error handling to make the code more robust.
