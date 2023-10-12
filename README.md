@@ -24,6 +24,8 @@ The display_books function lists all the available books in the library, includi
 
 The borrow_book function allows users to borrow a book by entering the book's title.
 It checks if the book is available and reduces the number of copies if it is. If the book is out of stock or not in the library, appropriate messages are displayed.
+
+
 5.Return a Book:
 
 The return_book function enables users to return a borrowed book by entering the book's title.
