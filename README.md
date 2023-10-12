@@ -1,6 +1,6 @@
 # LibraryManagementSystem
 
-Project Title: Simple Library Management System in Python
+Project Title: Library Management System in Python
 
 Description:
 This Python script demonstrates a simple Library Management System, which allows users to perform essential operations related to managing library books. The script uses a dictionary to store book information and provides a command-line interface for users to interact with the library.
