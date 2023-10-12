@@ -13,9 +13,13 @@ Code Description:
 
 The add_book function prompts the user to input details of a new book, including the title, author, and the number of copies.
 If the book already exists in the library, the code increments the number of copies. If not, a new entry is added to the library.
+
+
 3.Display Available Books:
 
 The display_books function lists all the available books in the library, including their titles, authors, and the number of copies.
+
+
 4.Borrow a Book:
 
 The borrow_book function allows users to borrow a book by entering the book's title.
@@ -24,12 +28,17 @@ It checks if the book is available and reduces the number of copies if it is. If
 
 The return_book function enables users to return a borrowed book by entering the book's title.
 It increments the number of copies if the book exists in the library; otherwise, it informs the user that the book is not found.
+
+
 6.Main Menu:
 
 The script displays a main menu that provides options for various actions, including adding, displaying, borrowing, and returning books. Users can also choose to quit the system.
+
+
 7.User Interaction:
 
 The code uses input to gather user input and responds accordingly based on the selected menu option.
+
 Usage:
 
 Users run the script, and it presents them with a menu to perform library management tasks.
